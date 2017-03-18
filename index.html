@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href=
+            "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css"
+          integrity=
+                  "sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd"
+          crossorigin="anonymous">
+</head>
+<body>
+<h1 style="text-align: center">Admin Login</h1>
+<p></p>
+<form action="checkadmin.php" method="post">
+    <fieldset class="form-group">
+        <label for="userinput">Username</label>
+        <input type="text" class="form-control"
+               id="userinput" placeholder="Enter username" name="username">
+        <small class="text-muted">
+
+        </small>
+    </fieldset>
+    <fieldset class="form-group">
+        <label for="passwordinput">Password</label>
+        <input type="password" class="form-control"
+               id="passwordinput" placeholder="Enter password" name="password">
+    </fieldset>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+</body>
+</html>

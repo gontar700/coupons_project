@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Welcome to Daniel Gontar's coupon platform</title>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href=
+            "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css"
+          integrity=
+                  "sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd"
+          crossorigin="anonymous">
+</head>
+<body>
+
+<form action = "addcoupon.php" method = "post" enctype="multipart/form-data">
+    <fieldset class="form-group">
+        <label for="couponId">Coupon Id:</label>
+        <input type="text" class="form-control" id="couponId"
+               placeholder="Enter Coupon Id" name="couponId">
+        <label for="categoryId">Category Id:</label>
+        <select class="form-control" id="categoryId"  name="categoryId"
+                placeholder="Enter Category" name="categoryId">
+            <option value=1>Food/Bavreges</option>
+            <option value=2>Cars</option>
+            <option value=3>Tennis gear</option>
+            <option value=4>Education</option>
+        </select>
+        <label for="businessId">Business Id:</label>
+        <input type="text" class="form-control" id="businessId"
+               placeholder="Enter Business Id" name="businessId">
+        <label for="couponName">Coupon Name:</label>
+        <input type="text" class="form-control" id="couponName"
+               placeholder="Enter Coupon Name" name="couponName">
+        <label for="couponDescription">Coupon Description:</label>
+        <input type="text" class="form-control" id="couponDescription"
+               placeholder="Enter Coupon Description" name="couponDescription">
+        <label for="businessName">Business Name:</label>
+        <select class="form-control" id="businessName"  name="businessName"
+               placeholder="Enter Business Name" name="businessName">
+            <option value="Mcdonalds">Mcdonalds</option>
+            <option value="Pepsi">Pepsi</option>
+            <option value="CokaCola">CokaCola</option>
+            <option value="Toyota">Toyota</option>
+            <option value="Nissan">Nissan</option>
+            <option value="Honda">Honda</option>
+            <option value="Babolat">Babolat</option>
+            <option value="Head">Head</option>
+            <option value="Wilson">Wilson</option>
+            <option value="Zend">Zend</option>
+        </select>
+        <span class="btn btn-default btn-file">
+            <!--<INPUT  TYPE="hidden" NAME = "MAX_FILE_SIZE" value = "9999999999999999999999999"/> -->
+            <input type="file" NAME = "file_data">
+        </span>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </fieldset>
+    <p><p>
+</form>
+<button id="backBtn" class="btn btn-primary" onclick="back()">Back</button><script>function back(){window.location.replace("http://www.danielgontar.com/web_portfolio/coupons_project/mainMenu.php")}</script>
+</body>
+</html>
